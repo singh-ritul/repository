@@ -1,0 +1,122 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+    
+
+
+
+:root{
+    --main-color:#fd4646;
+    --text-color:#02ac70;
+    --bg-color:#fff;
+    --container-color:#1e1e2a;
+
+
+}
+body{
+    color:var(--bg-color);
+    background-color: var(--container-color);
+}
+
+h3{
+    text-align:center;
+    font-size: 25px;
+    color: orange;
+}
+.hh{
+    text-align: center;
+    padding-top: 55px;
+}
+.title{
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.cover{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: 800px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-left: 20px;
+   
+}
+.box{
+    margin-left: 20px;
+    margin: 35px;
+    width:800px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.91)
+}
+.box img{
+    width: 300px;
+    height: 220px;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.topsell{
+    margin-top: 75px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+.innerbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.box:hover .innerbox{
+    display: block;
+}
+.cover .box .btn button{
+    width:100%;
+    background: wheat;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.91)
+}
+.cover .box .btn:hover{
+    border:0.5px solid black;
+}
+/* img {
+    width: 250px;
+    height: 200px;
+} */
+.others{
+    margin-top: 90px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+.cover1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box1{
+    margin-left: 30px;
+    text-align: center;
+}
+.box1 img{
+    margin-top: 15px;
+    height: 250px;
+    width: 275px;
+    border-radius: 50%;
+}
+.box1 img:hover{
+    
+    border:2px solid rgba(0, 0, 0, 0.385);
+}
+

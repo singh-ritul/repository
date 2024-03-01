@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylekr.css">
+        <link rel="stylesheet" href="project\project\style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="stylean.css">
+        <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <style>
+            @media only screen and (max-width:1000px){
+                .cover{display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-left: 10px;
+}
+            }
+        </style> -->
+        <style>
+            
+#cart-icon{
+    position: relative;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: orange;
+
+}
+</style>
+       
+        
+</head>
+<body>
+    
+
+</html>
+<!-- header start -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,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"
+                alt="Logo" width="30" height="30" class="d-inline-block align-top">
+            QuickLend
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Clothing</a></li>
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light btn-custom btn-orange" type="submit">Search</button>
+            </form>
+            <button class="btn btn-outline-light btn-custom btn-orange mx-2"
+                onclick="openModal('loginModal')">Login</button>
+            <button class="btn btn-outline-light btn-custom btn-orange"
+                onclick="openModal('signupModal')">Signup</button>
+                <i class='bx bxs-shopping-bag' id="cart-icon" data-quantity="0"></i>
+        <!-- cart
+        <div class="cart">
+            <h2 class="cart-title">YOUR CART</h2>
+            <div class="cart-content"></div>
+                <div class="total"><div class="total-title">
+                    total
+                </div>
+            <div class="total-price">$0</div></div>
+            <button type="button" class="btn-buy">PAY NOW</button> -->
+            <!-- close -->
+            <!-- <i class='bx bx-x' id="close-cart" ></i>
+            
+        </div> -->
+        </div>
+    </div>
+</nav>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <h2>Login</h2>
+        <!-- Add login form here -->
+        <form class="form-container"> <!-- Add the 'form-container' class to center the form -->
+            <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            
+            
+        </form>
+        <button class="btn btn-outline-light btn-custom btn-orange mt-3"
+            onclick="closeModal('loginModal')">Close</button>
+        
+    </div>
+</div>
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <h2>Sign Up</h2>
+        
+        <!-- Add signup form here -->
+        <form class="form-container">
+            <div class="mb-3">
+                <label for="signupName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="signupName" required>
+            </div>
+            <div class="mb-3">
+                <label for="signupEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signupPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <button class="btn btn-outline-light btn-custom btn-orange mt-3"
+            onclick="closeModal('signupModal')">Close</button>
+    </div>
+    <!-- cart -->
+ <i class='bx bxs-shopping-bag' id="cart-icon" data-quantity="0"></i>
+ <!-- cart -->
+ <div class="cart">
+     <h2 class="cart-title">YOUR CART</h2>
+     <div class="cart-content"></div>
+         <div class="total"><div class="total-title">
+             total
+         </div>
+     <div class="total-price">$0</div></div>
+     <button type="button" class="btn-buy">PAY NOW</button>
+     <!-- close -->
+     <i class='bx bx-x' id="close-cart" ></i>
+     
+ </div>
+</div>
+ <!-- Your content goes here -->
+ <script>
+    function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+    }
+
+    function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+    }
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+ 
+</header>
+<!-- header end -->
+<!-- main start -->
+<!-- home page-->
+        <div class="hero">
+    <div class="content">
+        <h4>WELCOME TO OUR</h4>
+        <H1>world's <br>creative studio</H1>
+    </div>
+    <div class="bubble">
+        <img src="\project\project\image\bubble.webp">
+        <img src="\project\project\image\bubble.webp">
+        <img src="\project\project\image\bubble.webp">
+        <img src="\project\project\image\bubble.webp">
+        <img src="\project\project\image\bubble.webp">
+        <img src="\project\project\image\bubble.webp">
+        <img src="\project\project\image\bubble.webp">
+    </div>
+    </div>
+
+<!--home page end -->
+
+<div class ="title">
+    <h3 >Product Categories</h3>
+</div>
+<div class="cover">
+    
+    <div class="box">
+        <a class ="img1" href="events.html"><img src="\cover\event.jpg" alt="events"></a>
+        <h3>EVENTS</h3>
+    </div>
+    <div class="box">
+        <a  class ="img1" href="musical.html"><img src="\cover\music.jpg" alt="music"></a>
+        <h3>MUSICAL INSTRUMENTS</h3>
+    </div>
+    <div class="box">
+        <a class ="img1" href="dress.html"><img src="\cover\dre.jpg" alt="dresses"></a>
+        <h3>DRESSES</h3>
+    </div>
+    <div class="box">
+        <a class ="img1" href="access.html"><img src="\cover\acce.jpg" alt="acces"></a>
+        <h3>ACCESSORIES</h3>
+    </div>
+    <div class="box">
+        <a class ="img1" href="cameras.html"><img src="\cover\camera.jpg" alt="Fruit"></a>
+        <h3>CAMERA AND LENSES</h3>
+    </div>
+
+</div>
+<!-- footer start -->
+
+ <footer>
+    <div class="container3">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email:Quicklend@exp.com</p>
+            <p>Phone:+121 56556 565556</p>
+            <p>Address:Basvangudi, Bangalore</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+             <ul class="list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contact</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+             <li><a href=""><i class="fab fa-facebook"></i></a></li>
+             <li><a href=""><i class="fab fa-twitter"></i></a></li>
+             <li><a href=""><i class="fab fa-instagram"></i></a></li>
+             <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 your company . All rights reserved</p>
+    </div> 
+    <!-- footer end-->
+     <!-- js
+     <script src="all.js"></script> -->
+
+    </body>
